@@ -4,7 +4,7 @@
   color: white;
   text-shadow: -2px 0 #E53935, 0 0px #E53935, 0px 0 #E53935, 0 -2px #E53935;
   text-align: center;
-  background-image: url('/arnold.jpg');
+  background-image: url('./arnold.jpg');
 }
 
 .App-chart-container {
