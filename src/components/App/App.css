@@ -15,3 +15,18 @@
 
   overflow: auto;
 }
+
+.App-chart-description {
+  font-size: 1.2em;
+}
+
+.App-chart-source {
+  color: #757575;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.App-chart-source a {
+  color: #757575;
+}
