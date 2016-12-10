@@ -6,3 +6,12 @@
   text-align: center;
   background-image: url('/arnold.jpg');
 }
+
+.App-chart-container {
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 800px;
+
+  overflow: auto;
+}
