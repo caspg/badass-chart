@@ -4,6 +4,7 @@ import { scaleBand, scaleLinear } from 'd3-scale'
 import data from '../../data'
 import Axes from '../Axes'
 import Bars from '../Bars'
+import ResponsiveWrapper from '../ResponsiveWrapper'
 
 class Chart extends Component {
   constructor() {
@@ -14,7 +15,10 @@ class Chart extends Component {
 
   render() {
     const margins = { top: 50, right: 20, bottom: 100, left: 60 }
-    const svgDimensions = { width: 800, height: 500 }
+    const svgDimensions = {
+      width: Math.max(this.props.parentWidth, 300),
+      height: 500
+    }
 
     const maxValue = Math.max(...data.map(d => d.value))
 
@@ -46,4 +50,4 @@ class Chart extends Component {
   }
 }
 
-export default Chart
+export default ResponsiveWrapper(Chart)
